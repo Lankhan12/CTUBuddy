@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upload Resources</title>
+    <link rel="stylesheet" type="text/css" href="share resources style.css"/>
+    <link rel="icon" type "image/icon" href="logo.png">
+</head>
+<div class="navbar">
+    <div class="icon">
+       
+    </div>
+
+    <div class="menu">
+        <ul>
+            <img src="logo.png" width="125px" height="95px">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="timetable.html">TIMETABLE</a></li>
+            <li><a href="Discussion.html">DISCUSSION</a></li>
+            <li><a href="Resources Page.html">SHARE RESOURCES</a></li>
+            <li><a href="About Us.html">ABOUT US</a></li>
+            <li><a href="Contact Us.html">CONTACT US</a></li>                       
+        </ul>
+    </div>     
+</div>
+<body style="background-color: teal;">
+    <br> <br> <br> <br> <br>
+<div class="container">
+    <h1>Upload Resources</h1>
+
+    <form action="resources_page.php" method="post" enctype="multipart/form-data">
+        <label for="resourceName">Resource Name:</label>
+        <input type="text" id="resourceName" name="resourceName" required><br><br>
+
+        <label for="resourceCategory">Resource Category:</label>
+        <span style="font-size: larger;"></span>
+        <select id="resourceCategory" name="resourceCate">
+            <option value="documents">Documents</option>
+            <option value="images">Images</option>
+            <option value="videos">Videos</option>
+            <option value="others">Others</option>
+        </select><br><br>
+
+        <label for="resourceFile">Upload File:</label>
+        <input type="file" id="resourceFile" name="resourceFile" required><br><br>
+
+        <input type="submit" value="Upload">
+    </form>
+    <h2>Search Resources</h2>
+    <input type="text" id="searchInput" placeholder="Search..." name="search_bar">
+    <ul id="resourceList">
+       
+    </ul>
+</div>
+<align center><footer style="background-color: #1DC9A1;">
+    <hr>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="timetable.html">TIMETABLE</a></li>
+        <li><a href="Discussion.html">DISCUSSION</a></li>
+        <li><a href="Resources Page.html">SHARE RESOURCES</a></li>
+        <li><a href="About Us.html">ABOUT US</a></li>
+        <li><a href="Contact Us.html">CONTACT US</a></li>                      
+    </ul>
+    Author: Kgosietsile Mekgoe<br>
+    &copy; 2023 CTU-Buddy. All rights reserved.<br>
+    <small><a href="">ctubuddy@gmail.com</a></small>
+</footer><br>
+
+</body>
+</html>
+
+

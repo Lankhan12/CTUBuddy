@@ -1,0 +1,197 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+    
+}
+.body{
+    background: linear-gradient(to bottom, #112A3C, #CED8E2, #1DC9A1);
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+  .menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    margin-left: 0%;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+  }
+
+  ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+  }
+
+  ul li a:hover{
+    color:midnightblue;
+  }
+
+  header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+
+.hero{
+    background: linear-gradient(to bottom, #112A3C, #CED8E2, #1DC9A1);
+    overflow: hidden;
+}
+
+.heading h1{ 
+    color: #112a3c;
+    font-size: 65px; 
+    text-align: center;
+    margin-top: 35px;
+}
+
+.container{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width:90% ;
+    margin: 65px auto;
+}
+
+.content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation:fadeInUp 2s ease;
+}
+
+.content h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content p{
+    font: size 35px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.content button{
+    display: inline-block;
+    background-color: #1dc9a1;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor:pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.content button :hover{
+    background-color: black;
+    transform: scale(1.1);
+}
+.team{
+    position: 0;
+    left: 0;
+    float: left;
+    text-align: justify;
+}
+.hero-image{
+    flex: 1;
+    width: 850px;
+    height: -2000px;
+    margin: auto;
+    animation:fadeInRight 2s ease;
+}
+
+.img{
+    width: 80%;
+    height: 50px; 
+    border-radius:20px ;
+   
+}
+
+@media screen and (max-width: 768px){
+    .heading h1{
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    .hero{
+        margin: 0px;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .content{
+        width: 100%;
+        margin: 35px 0px;
+
+    }
+    .content h2{
+        font-size: 30px;
+    }
+    .content p{
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+    .content button{
+        font-size: 16px;
+        padding: 5px 16px;
+    }
+    .team{
+        position: 0;
+        left: 0;
+    }
+    .img{
+        width: 80%;
+    }
+}
+@keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0px);
+    }    
+    }
+    @keyframes fadeInRight {
+        0%{
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100%{
+            opacity: 1;
+            transform:translateX(0px);
+        }    
+        }
+.footer{
+            position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 100px;
+              width: 100%;
+              overflow: hidden;
+}

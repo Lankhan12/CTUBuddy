@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTU-Buddy Discussion</title>
+  <link rel="stylesheet" href="Discussionstyle.css">
+  <link rel="icon" type "image/icon" href="logo.png">
+</head>
+<body>
+  
+  <div class="main">
+    <div class="navbar">
+        <div class="icon">
+            
+        </div>
+
+        <div class="menu">
+            <ul>
+              <img src="logo.png" width="125px" height="95px">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="timetable.html">TIMETABLE</a></li>
+                <li><a href="Discussion.html">DISCUSSION</a></li>
+                <li><a href="Resources Page.html">SHARE RESOURCES</a></li>
+                <li><a href="About Us.html">ABOUT US</a></li>
+                <li><a href="Contact Us.html">CONTACT US</a></li>                       
+            </ul>
+        </div>     
+    </div>
+  </div>
+  <main class="discussion-page">
+    <section class="discussion-form">
+      <h2>Start a Discussion</h2>
+      <form action="discussion.php" method="post">
+        <label for="user-name">Name:</label>
+        <input type="text" id="user-name" name="user-name" required>
+        <label for="discussion-topic">Topic:</label>
+        <input type="text" id="discussion-topic" name="discussion-topic" required>
+        <label for="discussion-content">Question:</label>
+        <textarea id="discussion-content" name="discussion-content" rows="4" required></textarea>
+        <button type="submit">Post</button>
+      </form>
+    </section>
+
+    <section class="discussions">
+      <h2>Recent Discussions</h2>
+      <div class="discussion">
+        <div class="discussion-content">
+          <h4>Discussion Topic</h4>
+          <p>Discussion content here. Previous replies and discussions...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <br><footer style="background-color: #1DC9A1">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="timetable.html">TIMETABLE</a></li>
+      <li><a href="Discussion.html">DISCUSSION</a></li>
+      <li><a href="Resources Page.html">SHARE RESOURCES</a></li>
+      <li><a href="About Us.html">ABOUT US</a></li>
+      <li><a href="Contact Us.html">CONTACT US</a></li>                      
+  </ul>
+    Author: Buhlebezwe Nkosi<br>
+    &copy; 2023 CTU-Buddy. All rights reserved.<br>
+    <small><a href="">ctubuddy@gmail.com</a></small>
+    </footer><br>
+</body>
+</html>
